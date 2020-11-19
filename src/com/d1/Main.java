@@ -5,6 +5,11 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+
+
+    }
+
+    static void fromCtoF() {
         try (Scanner s = new Scanner(System.in)) {
             while (true) {
                 System.out.println("Введите градусы С для перевода");
@@ -17,5 +22,16 @@ public class Main {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    static int sumOfDigits(int number) {
+        int sum = 0;
+        while (number != 0) {
+            sum += number % 10;
+            number /= 10;
+        }
+        System.out.println(sum);
+
+        return sum;
     }
 }
